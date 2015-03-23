@@ -1,2 +1,2 @@
 # CellularLayout
-first commit
+A simple cellular layout
