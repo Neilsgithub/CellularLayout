@@ -1,0 +1,26 @@
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingStart="20dp" 
+    android:scrollbars="none"
+    android:background="@color/white" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+
+        <com.example.view.SixangleScrollView
+            android:id="@+id/sixangleView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_marginTop="40dp">
+        </com.example.view.SixangleScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+</HorizontalScrollView>
