@@ -16,12 +16,11 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity {
 	
-	private SixangleScrollView sexangleViewGroup;
+	private SixangleScrollView sixangleViewGroup;
 	private ViewBean viewBean;
 	private SixangleImageView imageViews;
-	private static final int ID = 0x10000;
-	public static int screenWidth  ;  // ÆÁÄ»¿í¶È
-	public static int scrrenHeight ;  //ÆÁÄ»¸ß¶È
+	public static int screenWidth  ;  
+	public static int scrrenHeight ;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +30,7 @@ public class MainActivity extends Activity {
 		getWindowManager().getDefaultDisplay().getMetrics(metric);
 		screenWidth = metric.widthPixels ;
 		scrrenHeight = metric.heightPixels;	
-		sexangleViewGroup = (SixangleScrollView) findViewById(R.id.sexangleView);
+		sixangleViewGroup = (SixangleScrollView) findViewById(R.id.sixangleView);
 		initView();
 	}
 
@@ -52,10 +51,10 @@ public class MainActivity extends Activity {
 				
 			}
 			
-			sexangleViewGroup.addView(imageViews);
+			sixangleViewGroup.addView(imageViews);
 		}
 		FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams((int) (screenWidth*(1.5)), LayoutParams.MATCH_PARENT);
-		sexangleViewGroup.setLayoutParams(layoutParams);
+		sixangleViewGroup.setLayoutParams(layoutParams);
 	}
 	
 	OnSixangleImageClickListener listener = new OnSixangleImageClickListener() {
